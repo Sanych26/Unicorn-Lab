@@ -1,0 +1,210 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="java_script/main.js"></script>
+
+  <div class="main-cont">
+
+
+    <div class="container" id="header">
+      <div class="content">
+        <div class="logo"><a href="index.html"><img src="images/icons/UL,-logo-black+gradient.png " alt=""></a></div>
+        <div class="menu-container">
+          <div class="navicon">
+            <img src="images/icons/navicon.png" alt="">
+          </div>
+          <div class="menu">
+            <div class="esc-nav">X</div>
+            <div class="menu-item"><a class="item" href="index.html">About</a></div>
+            <div class="menu-item"><a class="item" href="index.html">Fundraising</a></div>
+            <div class="menu-item">
+              <div class="arrow-menu"></div>
+              <span><a href="invest.html">Invest Meetup</a></span>
+              <div class="sub-menu-cont">
+                <ul class="sub-menu">
+                  <li><a class="sub-item" id="sub-itm1" href="future-list.html">Upcoming Events</a></li>
+                  <li><a class="sub-item" id="sub-itm2" href="past-list.html">Past Events</a></li>
+                  <li><a class="sub-item" id="sub-itm3" href="invest.html">Invest Meetup</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu-item"><a class="item" href="investors.html">Investors</a></div>
+            <div class="menu-item"><a class="item" href="startups.html">Startups</a></div>
+            <div class="menu-item" id="event"><a class="item" href="blog.html">Blog</a></div>
+            <div class="menu-item" id="social"><a href="apply.html">Apply</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+
+      <div class="backtotop"><a><img src=" " alt=""></a></div>
+
+      <div class="container" id="past-events">
+        <div class="content" id="apply">
+          <div class="name">
+            <div class="name2"><a href="index.html">Unicorn Lab</a> > Apply</div>
+            <div class="name1">Startup Application</div>
+            <div class="txt1">Please fill this application. We will review it and contact you with our feedback soon.</div>
+            <div class="txt2"><span>*</span> Required</div>
+          </div>
+          <div class="article-cont">
+            <div class="cont">
+              <form name="subscribe_form" data-rout="subscribe" action="send.php" method="post">
+                <div class="form-input-cont">
+                  <p class="frm">Startup Email <span>*</span></p>
+                  <div class="form-input-field"><input class="form-label" type="email" name="startup_email" required></div>
+                  <p class="frm">Position in the Startup <span>*</span></p>
+                  <div class="form-input-field"><input class="form-label" type="text" name="position_in_the_startup" required></div>
+                  <p class="frm">Startup Name <span>*</span></p>
+                  <div class="form-input-field"><input class="form-label" type="text" name="startup_name" required></div>
+                  <p class="frm">Startup Website <span>*</span></p>
+                  <div class="form-input-field"><input class="form-label" type="text" name="startup_website" required></div>
+                  <p class="frm">Startup LinkedIn</p>
+                  <div class="form-input-field"><input class="form-label" type="text" name="startup_linkedin"></div>
+                  <p class="frm">Startup Twitter</p>
+                  <div class="form-input-field"><input class="form-label" type="text" name="startup_twitter"></div>
+                  <p class="frm">Startup Facebook</p>
+                  <div class="form-input-field"><input class="form-label" type="text" name="startup_facebook"></div>
+                  <p class="frm">Startup Instagram</p>
+                  <div class="form-input-field"><input class="form-label" type="text" name="startup_instagram"></div>
+                  <div class="esc-cont">
+                    <p class="frm">Startup Logo</p>
+                    <div class="esc">
+                      <div id="esc">X</div>
+                    </div>
+                  </div>
+                  <div class="form-input-field">
+                    <div id="file">
+                      <label for="file-upload" class="custom-file">Select file</label>File is not selected
+                      <input type="file" id="file-upload" name="files[]" accept="image/jpeg,image/png,image/jpg">
+                      <output id="list"></output>
+                    </div>
+                    <p class="frm-after" id="form-img">PNG or JPG format</p>
+                  </div>
+                  <p class="frm" id="frm-country">Country of Incorporation <span>*</span></p>
+                  <div class="form-input-field"><input class="form-label" type="text" name="country" required></div>
+                  <p class="frm">Category <span>*</span></p>
+                  <div class="frm-list-cont">
+                    <div class="frm-list">
+                      <input type="checkbox" name="category" value="Other" checked> Other<br>
+                      <input type="checkbox" name="category" value="Software"> Software<br>
+                      <input type="checkbox" name="category" value="Hardware"> Hardware<br>
+                      <input type="checkbox" name="category" value="Artificial Intelligence"> Artificial Intelligence
+                    </div>
+                    <div class="frm-list">
+                      <input type="checkbox" name="category" value="Saas" checked> Saas<br>
+                      <input type="checkbox" name="category" value="Wearable device"> Wearable device<br>
+                      <input type="checkbox" name="category" value="Wellness"> Wellness<br>
+                      <input type="checkbox" name="category" value="LongevityTech"> LongevityTech<br>
+                    </div>
+                    <div class="frm-list">
+                      <input type="checkbox" name="category" value="BioTech" checked> BioTech<br>
+                      <input type="checkbox" name="category" value="HealthTech"> HealthTech<br>
+                    </div>
+                  </div>
+                  <p class="frm">Purpose of the Startup <span>*</span></p>
+                  <div id="textarea">
+                    <div class="form-input-field"><textarea class="form-label" type="text" name="purpose" maxlength="300" required></textarea></div>
+                    <div class="frm-after"><span>Maximum 300 characters. Left: 300</span>Define your Startup in one sentence</div>
+                  </div>
+                  <p class="frm">Problem</p>
+                  <div id="textarea">
+                    <div class="form-input-field"><textarea class="form-label" type="text" name="purpose" maxlength="500"></textarea></div>
+                    <div class="frm-after"><span>Maximum 500 characters. Left: 500</span>Describe the pain of your customers or their clients</div>
+                  </div>
+                  <p class="frm">Solution</p>
+                  <div id="textarea">
+                    <div class="form-input-field"><textarea class="form-label" type="text" name="purpose" maxlength="1000"></textarea></div>
+                    <div class="frm-after"><span>Maximum 1000 characters. Left: 1000</span>Show how your product makes the life of customers better</div>
+                  </div>
+                  <p class="frm">Technology</p>
+                  <div id="textarea">
+                    <div class="form-input-field"><textarea class="form-label" type="text" name="purpose" maxlength="1000"></textarea></div>
+                    <div class="frm-after"><span>Maximum 1000 characters. Left: 1000</span>What technology are you using for your solution?</div>
+                  </div>
+                  <p class="frm">Stage of the Startup</p>
+                  <div id="textarea">
+                    <div class="form-input-field"><textarea class="form-label" type="text" name="purpose" maxlength="500"></textarea></div>
+                    <div class="frm-after"><span>Maximum 500 characters. Left: 500</span>Current Situation of your Startup?<br>What current trends will make your Startup possible?</div>
+                  </div>
+                  <p class="frm">Market</p>
+                  <div id="textarea">
+                    <div class="form-input-field"><textarea class="form-label" type="text" name="purpose" maxlength="1000"></textarea></div>
+                    <div class="frm-after"><span>Maximum 1000 characters. Left: 1000</span>Identify Your Target Customer and Market Size:<br>TAM - Total Addressable Market;<br>SAM - Served/Serviceable Available Market;<br>SOM - Serviceable and
+                      Obtainable Market.</div>
+                  </div>
+                  <p class="frm">List of Competitors</p>
+                  <div id="textarea">
+                    <div class="form-input-field"><textarea class="form-label" type="text" name="purpose" maxlength="500"></textarea></div>
+                    <div class="frm-after"><span>Maximum 500 characters. Left: 500</span>What are your competitive advantages?</div>
+                  </div>
+                  <p class="frm">Business Model</p>
+                  <div id="textarea">
+                    <div class="form-input-field"><textarea class="form-label" type="text" name="purpose" maxlength="500"></textarea></div>
+                    <div class="frm-after"><span>Maximum 500 characters. Left: 500</span>B2B / B2C / B2B2C / B2G<br>Commission / Subscription / Purchasing</div>
+                  </div>
+                  <p class="frm">Team</p>
+                  <div id="textarea">
+                    <div class="form-input-field"><textarea class="form-label" type="text" name="purpose" maxlength="300"></textarea></div>
+                    <div class="frm-after"><span>Maximum 300 characters. Left: 300</span>Founders; Key Staff; Board of Directors; Advisers</div>
+                  </div>
+                  <p class="frm">Finance</p>
+                  <div id="textarea">
+                    <div class="form-input-field"><textarea class="form-label" type="text" name="purpose" maxlength="500"></textarea></div>
+                    <div class="frm-after"><span>Maximum 500 characters. Left: 500</span>Profit & Loss; Revenue; Costs; EBITDA</div>
+                  </div>
+                  <p class="frm">Offer for Investors</p>
+                  <div id="textarea">
+                    <div class="form-input-field"><textarea class="form-label" type="text" name="purpose" maxlength="300"></textarea></div>
+                    <div class="frm-after"><span>Maximum 300 characters. Left: 300</span>The Amount of Necessary Investments at this Stage</div>
+                  </div>
+                  <p class="frm">Innovation for Corporations</p>
+                  <div id="textarea">
+                    <div class="form-input-field"><textarea class="form-label" type="text" name="purpose" maxlength="1000"></textarea></div>
+                    <div class="frm-after"><span>Maximum 1000 characters. Left: 1000</span>What Technology or Solution do you offer to Corporations</div>
+                  </div>
+                  <p class="frm">Video presentation</p>
+                  <div class="form-input-field">
+                    <input class="form-label" type="text" name="video_presentation">
+                    <div class="frm-after" id="form-img">Link</div>
+                  </div>
+                  <p class="frm" id="last-frm">Investor Deck</p>
+                  <div class="form-input-field">
+                    <input class="form-label" type="text" name="investor_deck">
+                    <div class="frm-after" id="form-img">Link to your PPT or PDF slides</div>
+                  </div>
+                </div>
+                <button class="apply-btn" type="submit" name="submit_form" value="Apply">Apply</button>
+            </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="footer">
+      <div class="content">
+        <div class="menu">
+          <div class="menu-item"><img src="images/icons/fb .png " alt=""></div>
+          <div class="menu-item"><img src="images/icons/twitter.png " alt=""></div>
+          <div class="menu-item"><img src="images/icons/inst.png " alt=""></div>
+          <div class="menu-item"><img src="images/icons/linkedin.png " alt=""></div>
+        </div>
+        <div class="logo"><a href="index.html"><img src="images/icons/UL,-logo-black+gradient.png " alt=""></a></div>
+        <div class="inf">© 2019-2021 UnicornLab, Inc.</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
